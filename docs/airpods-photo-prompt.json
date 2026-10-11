@@ -1,0 +1,9 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    "frontend/public/images/products/airpods-pro-3-wht.png",
+    "frontend/public/images/products/airpods-pro-3-detail.png"
+  ],
+  "prompt": "Use case: product-mockup. Asset type: square ecommerce product photography for the AirPods Pro 3 product card in a minimal Apple device store. Primary request: create a photorealistic premium studio photograph, not an illustration, of a glossy white wireless earbud charging case and two white in-ear AirPods Pro style earbuds with silicone ear tips. Scene: continuous very light neutral gray studio backdrop and tabletop, soft natural contact shadows. Subject: closed rounded rectangular charging case behind, visible fine lid seam and tiny status LED, two realistically proportioned short-stem earbuds in front, each with white silicone tip and small black acoustic vents. Composition: centered, gentle three-quarter perspective, complete products visible without cropping, product group occupying about 65 percent of frame with balanced breathing room. Camera: professional macro product photography, crisp polished plastic highlights, subtle realistic material details, softbox light, believable optical depth. Color palette: white, pale gray, tiny black vent details. Constraints: square 1024x1024 raster photo, no text, no captions, no watermark, no packaging, no diagram, no oversized stems, no cartoon shapes, no flat SVG appearance, no extra earbuds, no decorative props. Match the calm pale-gray backgrounds of the store's existing realistic phone photos.",
+  "note": "One generated photo reused for thumbnail, white variant and gallery; requested replacement of legacy SVG."
+}

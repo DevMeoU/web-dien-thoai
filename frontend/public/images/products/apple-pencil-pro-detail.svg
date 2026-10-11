@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="Apple Pencil Pro, góc nhìn thứ hai">
+<defs><linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f4f4" stop-opacity="1"/><stop offset="1" stop-color="#eeeeee" stop-opacity="1"/></linearGradient><filter id="blur3" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="22"/></filter><linearGradient id="pc1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9d9d4" stop-opacity="1"/><stop offset="0.3" stop-color="#ffffff" stop-opacity="1"/><stop offset="0.7" stop-color="#f4f4f1" stop-opacity="1"/><stop offset="1" stop-color="#cfcfca" stop-opacity="1"/></linearGradient></defs>
+<rect width="1200" height="1200" fill="url(#bg2)"/>
+
+<ellipse cx="600" cy="1040" rx="460" ry="24" fill="#111111" fill-opacity="0.18" filter="url(#blur3)"/>
+<g transform="translate(600 600) scale(1.12) translate(-600 -600) rotate(5 600 600)"><g transform="translate(600 580) rotate(0) scale(1.2)"><g transform="rotate(-38)"><rect x="-24" y="-440" width="48" height="760" rx="24" fill="url(#pc1)" stroke="#d0d0cb" stroke-width="2"/>
+<path d="M-24 306 L0 420 L24 306 Z" fill="#f4f4f1" stroke="#d0d0cb" stroke-width="2" stroke-linejoin="round"/><path d="M-6 394 L0 420 L6 394 Z" fill="#3a3a3d"/>
+<rect x="-24" y="230" width="48" height="2" fill="#cfcfca"/><rect x="-8" y="-380" width="3" height="560" rx="1.5" fill="#d9d9d4"/></g></g></g>
+</svg>

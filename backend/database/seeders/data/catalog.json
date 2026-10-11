@@ -1,0 +1,466 @@
+{
+  "_note": "Nguồn dữ liệu duy nhất cho CatalogSeeder (PHP) và scripts/generate-product-art.mjs (ảnh minh họa). Giá, thông số mang tính minh họa cho dữ liệu mẫu — hãy đối chiếu với công bố chính thức của Apple khi vận hành thật.",
+  "brands": [
+    { "slug": "apple", "name": "Apple", "description": "Thiết bị và phụ kiện chính hãng Apple." },
+    { "slug": "beats", "name": "Beats", "description": "Thương hiệu âm thanh thuộc hệ sinh thái Apple." },
+    { "slug": "belkin", "name": "Belkin", "description": "Phụ kiện sạc và bảo vệ được Apple tin dùng (MFi)." }
+  ],
+  "categories": [
+    { "slug": "iphone", "name": "iPhone", "order": 1, "description": "Dòng điện thoại thông minh của Apple." },
+    { "slug": "iphone-17", "name": "iPhone 17 Series", "parent": "iphone", "order": 1 },
+    { "slug": "iphone-16", "name": "iPhone 16 Series", "parent": "iphone", "order": 2 },
+    { "slug": "mac", "name": "Mac", "order": 2, "description": "MacBook, iMac và Mac mini." },
+    { "slug": "macbook-air", "name": "MacBook Air", "parent": "mac", "order": 1 },
+    { "slug": "macbook-pro", "name": "MacBook Pro", "parent": "mac", "order": 2 },
+    { "slug": "ipad", "name": "iPad", "order": 3, "description": "Máy tính bảng cho học tập và sáng tạo." },
+    { "slug": "apple-watch", "name": "Apple Watch", "order": 4, "description": "Đồng hồ thông minh theo dõi sức khỏe." },
+    { "slug": "airpods", "name": "AirPods", "order": 5, "description": "Tai nghe không dây và âm thanh." },
+    { "slug": "phu-kien", "name": "Phụ kiện", "order": 6, "description": "Sạc, bút cảm ứng và thiết bị định vị." }
+  ],
+  "products": [
+    {
+      "slug": "iphone-17-pro-max", "code": "IP17PM", "name": "iPhone 17 Pro Max", "kind": "iphone-pro",
+      "tagline": "Mạnh mẽ nhất. Pro hơn bao giờ hết.",
+      "category": "iphone-17", "brand": "apple", "price": 37990000,
+      "option_label": "Dung lượng", "collections": ["creative", "work"], "is_new": true, "is_featured": true,
+      "warranty": "Bảo hành chính hãng 12 tháng, 1 đổi 1 trong 30 ngày nếu lỗi do nhà sản xuất.",
+      "in_the_box": "iPhone, cáp sạc USB-C, tài liệu hướng dẫn. Củ sạc bán riêng.",
+      "description": "iPhone 17 Pro Max gói trọn sức mạnh vào khung nhôm nguyên khối: chip A19 Pro, hệ thống ba camera 48MP và màn hình ProMotion lớn nhất từ trước đến nay. Một thiết bị cho cả công việc lẫn sáng tạo, bền bỉ suốt ngày dài.",
+      "highlights": ["Chip A19 Pro cho hiệu năng và đồ họa đỉnh cao", "Hệ thống ba camera Fusion 48MP, zoom quang học đến 8x", "Màn hình Super Retina XDR 6,9 inch, ProMotion 120Hz", "Thời lượng pin dài nhất trong các dòng iPhone", "Khung nhôm nguyên khối với buồng tản nhiệt hơi nước"],
+      "specs": [
+        ["Màn hình", "6,9 inch Super Retina XDR OLED, ProMotion 120Hz, Always-On"],
+        ["Chip xử lý", "A19 Pro"],
+        ["Camera sau", "3 camera Fusion 48MP: chính, góc siêu rộng, tele"],
+        ["Camera trước", "18MP Center Stage"],
+        ["Khung & mặt lưng", "Nhôm nguyên khối, Ceramic Shield"],
+        ["Kết nối", "5G, Wi-Fi 7, Bluetooth 6, USB-C"],
+        ["Chống nước, bụi", "IP68"],
+        ["Hệ điều hành", "iOS 26"]
+      ],
+      "colors": [
+        { "key": "ORG", "name": "Cam Vũ Trụ", "hex": "#d8692a" },
+        { "key": "NVY", "name": "Xanh Đậm", "hex": "#34476a" },
+        { "key": "SLV", "name": "Bạc", "hex": "#dcdde0" }
+      ],
+      "configurations": [
+        { "key": "256", "label": "256GB", "price": 37990000 },
+        { "key": "512", "label": "512GB", "price": 44990000 },
+        { "key": "1TB", "label": "1TB", "price": 51990000 }
+      ]
+    },
+    {
+      "slug": "iphone-17", "code": "IP17", "name": "iPhone 17", "kind": "iphone-bar",
+      "tagline": "Màu sắc rực rỡ. Hiệu năng vượt trội.",
+      "category": "iphone-17", "brand": "apple", "price": 24990000,
+      "option_label": "Dung lượng", "collections": ["student", "creative"], "is_new": true, "is_featured": true,
+      "warranty": "Bảo hành chính hãng 12 tháng, 1 đổi 1 trong 30 ngày nếu lỗi do nhà sản xuất.",
+      "in_the_box": "iPhone, cáp sạc USB-C, tài liệu hướng dẫn. Củ sạc bán riêng.",
+      "description": "iPhone 17 cân bằng giữa vẻ ngoài tươi sáng và sức mạnh hằng ngày: màn hình ProMotion 120Hz mượt mà, camera Fusion 48MP và bộ nhớ khởi điểm 256GB. Lựa chọn dễ chịu cho phần lớn người dùng.",
+      "highlights": ["Chip A19 mạnh mẽ, tiết kiệm điện", "Camera Fusion 48MP kèm camera góc siêu rộng 48MP", "Màn hình 6,3 inch ProMotion 120Hz sáng hơn", "Camera trước 18MP Center Stage tự động căn khung", "Bộ nhớ khởi điểm 256GB"],
+      "specs": [
+        ["Màn hình", "6,3 inch Super Retina XDR OLED, ProMotion 120Hz"],
+        ["Chip xử lý", "A19"],
+        ["Camera sau", "Camera kép 48MP: Fusion và góc siêu rộng"],
+        ["Camera trước", "18MP Center Stage"],
+        ["Khung & mặt lưng", "Nhôm, Ceramic Shield"],
+        ["Kết nối", "5G, Wi-Fi 7, Bluetooth 6, USB-C"],
+        ["Chống nước, bụi", "IP68"],
+        ["Hệ điều hành", "iOS 26"]
+      ],
+      "colors": [
+        { "key": "BLK", "name": "Đen", "hex": "#2c2c2f" },
+        { "key": "WHT", "name": "Trắng", "hex": "#f3f2ee" },
+        { "key": "MST", "name": "Xanh Sương", "hex": "#9db6cf" },
+        { "key": "SAG", "name": "Xanh Xô Thơm", "hex": "#a3b39a" },
+        { "key": "LAV", "name": "Oải Hương", "hex": "#b9a9d3" }
+      ],
+      "configurations": [
+        { "key": "256", "label": "256GB", "price": 24990000 },
+        { "key": "512", "label": "512GB", "price": 31990000 }
+      ]
+    },
+    {
+      "slug": "iphone-air", "code": "IPAIR", "name": "iPhone Air", "kind": "iphone-air",
+      "tagline": "Mỏng nhẹ đến bất ngờ.",
+      "category": "iphone-17", "brand": "apple", "price": 31990000,
+      "option_label": "Dung lượng", "collections": ["work", "creative"], "is_new": true, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng, 1 đổi 1 trong 30 ngày nếu lỗi do nhà sản xuất.",
+      "in_the_box": "iPhone, cáp sạc USB-C, tài liệu hướng dẫn. Củ sạc bán riêng.",
+      "description": "iPhone Air là chiếc iPhone mỏng nhất từ trước đến nay, chỉ dày 5,6 mm với khung titan bền chắc. Nhẹ trong tay nhưng vẫn mang chip A19 Pro và màn hình ProMotion, dành cho những ai muốn một thiết bị thanh thoát.",
+      "highlights": ["Thân máy chỉ dày 5,6 mm, khung titan", "Chip A19 Pro, chip mạng N1 và modem C1X", "Màn hình 6,5 inch ProMotion 120Hz", "Camera Fusion 48MP, camera trước 18MP Center Stage"],
+      "specs": [
+        ["Màn hình", "6,5 inch Super Retina XDR OLED, ProMotion 120Hz"],
+        ["Chip xử lý", "A19 Pro"],
+        ["Camera sau", "Camera Fusion 48MP"],
+        ["Camera trước", "18MP Center Stage"],
+        ["Độ dày", "5,6 mm"],
+        ["Khung máy", "Titan"],
+        ["Kết nối", "5G, Wi-Fi 7, Bluetooth 6, USB-C, eSIM"],
+        ["Hệ điều hành", "iOS 26"]
+      ],
+      "colors": [
+        { "key": "BLK", "name": "Đen Không Gian", "hex": "#2b2b2d" },
+        { "key": "WHT", "name": "Trắng Mây", "hex": "#f1efe9" },
+        { "key": "GLD", "name": "Vàng Nhạt", "hex": "#e2d2ac" },
+        { "key": "SKY", "name": "Xanh Da Trời", "hex": "#b4cbdd" }
+      ],
+      "configurations": [
+        { "key": "256", "label": "256GB", "price": 31990000 },
+        { "key": "512", "label": "512GB", "price": 38990000 }
+      ]
+    },
+    {
+      "slug": "iphone-16", "code": "IP16", "name": "iPhone 16", "kind": "iphone",
+      "tagline": "Sẵn sàng cho Apple Intelligence.",
+      "category": "iphone-16", "brand": "apple", "price": 19990000, "compare_at": 22990000,
+      "option_label": "Dung lượng", "collections": ["student"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng, 1 đổi 1 trong 30 ngày nếu lỗi do nhà sản xuất.",
+      "in_the_box": "iPhone, cáp sạc USB-C, tài liệu hướng dẫn. Củ sạc bán riêng.",
+      "description": "iPhone 16 với chip A18, nút Điều khiển camera và nút Tác vụ, đem đến trải nghiệm trọn vẹn trong tầm giá dễ tiếp cận hơn. Ưu đãi hấp dẫn cho thế hệ trước.",
+      "highlights": ["Chip A18 hỗ trợ Apple Intelligence", "Nút Điều khiển camera và nút Tác vụ", "Camera Fusion 48MP, camera góc siêu rộng 12MP", "Cổng USB-C tiện dụng"],
+      "specs": [
+        ["Màn hình", "6,1 inch Super Retina XDR OLED"],
+        ["Chip xử lý", "A18"],
+        ["Camera sau", "Camera kép: Fusion 48MP và góc siêu rộng 12MP"],
+        ["Camera trước", "12MP TrueDepth"],
+        ["Khung máy", "Nhôm, Ceramic Shield"],
+        ["Kết nối", "5G, Wi-Fi 7, Bluetooth 5.3, USB-C"],
+        ["Chống nước, bụi", "IP68"],
+        ["Hệ điều hành", "iOS 18 (nâng cấp được lên iOS 26)"]
+      ],
+      "colors": [
+        { "key": "BLK", "name": "Đen", "hex": "#2f3033" },
+        { "key": "WHT", "name": "Trắng", "hex": "#f2f2ef" },
+        { "key": "TEL", "name": "Xanh Mòng Két", "hex": "#aecdd0" },
+        { "key": "PNK", "name": "Hồng", "hex": "#f0c4d0" },
+        { "key": "ULT", "name": "Xanh Lưu Ly", "hex": "#8e9fe0" }
+      ],
+      "configurations": [
+        { "key": "128", "label": "128GB", "price": 19990000, "compare_at": 22990000 },
+        { "key": "256", "label": "256GB", "price": 22990000 }
+      ]
+    },
+    {
+      "slug": "macbook-air-13-m4", "code": "MBA13", "name": "MacBook Air 13 inch M4", "kind": "macbook",
+      "tagline": "Mỏng nhẹ. Siêu mạnh. Pin cả ngày.",
+      "category": "macbook-air", "brand": "apple", "price": 26990000,
+      "option_label": "Cấu hình", "collections": ["student", "work"], "is_new": true, "is_featured": true,
+      "warranty": "Bảo hành chính hãng 12 tháng tại trung tâm bảo hành ủy quyền Apple.",
+      "in_the_box": "MacBook Air, sạc USB-C 30W, cáp USB-C sang MagSafe 3 (2 m), tài liệu hướng dẫn.",
+      "description": "MacBook Air 13 inch với chip M4 mỏng chỉ 1,13 cm, không quạt nên hoàn toàn êm lặng. RAM khởi điểm 16GB, màn hình Liquid Retina rực rỡ và pin dùng cả ngày: người bạn đồng hành cho học tập và làm việc.",
+      "highlights": ["Chip Apple M4, RAM khởi điểm 16GB", "Màn hình Liquid Retina 13,6 inch, 500 nit", "Pin đến 18 giờ xem video", "Không quạt, hoàn toàn êm lặng", "Camera 12MP Center Stage"],
+      "specs": [
+        ["Chip xử lý", "Apple M4, CPU 10 nhân, GPU 8–10 nhân"],
+        ["Màn hình", "13,6 inch Liquid Retina, 2560 × 1664, 500 nit"],
+        ["Bộ nhớ", "RAM 16GB / 24GB / 32GB, SSD 256GB đến 2TB"],
+        ["Camera", "12MP Center Stage"],
+        ["Cổng kết nối", "2 × Thunderbolt 4, MagSafe 3, giắc tai nghe 3,5 mm"],
+        ["Bàn phím", "Magic Keyboard có Touch ID, đèn nền"],
+        ["Pin", "Đến 18 giờ xem video"],
+        ["Trọng lượng", "1,24 kg"]
+      ],
+      "colors": [
+        { "key": "SKY", "name": "Xanh Da Trời", "hex": "#b7cbdf" },
+        { "key": "MID", "name": "Xanh Đêm", "hex": "#2f3a48" },
+        { "key": "STL", "name": "Ánh Sao", "hex": "#e9e2d3" },
+        { "key": "SLV", "name": "Bạc", "hex": "#d9dadd" }
+      ],
+      "configurations": [
+        { "key": "16-256", "label": "16GB / 256GB", "price": 26990000 },
+        { "key": "16-512", "label": "16GB / 512GB", "price": 31990000 },
+        { "key": "24-512", "label": "24GB / 512GB", "price": 37990000 }
+      ]
+    },
+    {
+      "slug": "macbook-air-15-m4", "code": "MBA15", "name": "MacBook Air 15 inch M4", "kind": "macbook",
+      "tagline": "Màn hình lớn hơn. Vẫn mỏng nhẹ.",
+      "category": "macbook-air", "brand": "apple", "price": 32990000,
+      "option_label": "Cấu hình", "collections": ["work", "creative"], "is_new": true, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng tại trung tâm bảo hành ủy quyền Apple.",
+      "in_the_box": "MacBook Air, sạc USB-C 35W, cáp USB-C sang MagSafe 3 (2 m), tài liệu hướng dẫn.",
+      "description": "Không gian làm việc rộng rãi trên màn hình 15,3 inch nhưng chỉ nặng 1,51 kg. Hệ thống sáu loa cho âm thanh không gian đầy đặn khi xem phim và họp trực tuyến.",
+      "highlights": ["Chip Apple M4, RAM khởi điểm 16GB", "Màn hình Liquid Retina 15,3 inch", "Hệ thống sáu loa hỗ trợ âm thanh không gian", "Pin đến 18 giờ xem video"],
+      "specs": [
+        ["Chip xử lý", "Apple M4, CPU 10 nhân, GPU 10 nhân"],
+        ["Màn hình", "15,3 inch Liquid Retina, 2880 × 1864, 500 nit"],
+        ["Bộ nhớ", "RAM 16GB / 24GB / 32GB, SSD 256GB đến 2TB"],
+        ["Camera", "12MP Center Stage"],
+        ["Cổng kết nối", "2 × Thunderbolt 4, MagSafe 3, giắc tai nghe 3,5 mm"],
+        ["Âm thanh", "Hệ thống sáu loa, âm thanh không gian"],
+        ["Pin", "Đến 18 giờ xem video"],
+        ["Trọng lượng", "1,51 kg"]
+      ],
+      "colors": [
+        { "key": "SKY", "name": "Xanh Da Trời", "hex": "#b7cbdf" },
+        { "key": "MID", "name": "Xanh Đêm", "hex": "#2f3a48" },
+        { "key": "STL", "name": "Ánh Sao", "hex": "#e9e2d3" },
+        { "key": "SLV", "name": "Bạc", "hex": "#d9dadd" }
+      ],
+      "configurations": [
+        { "key": "16-256", "label": "16GB / 256GB", "price": 32990000 },
+        { "key": "16-512", "label": "16GB / 512GB", "price": 37990000 }
+      ]
+    },
+    {
+      "slug": "macbook-pro-14-m4", "code": "MBP14", "name": "MacBook Pro 14 inch M4", "kind": "macbook",
+      "tagline": "Sức mạnh chuyên nghiệp, gọn trong tầm tay.",
+      "category": "macbook-pro", "brand": "apple", "price": 39990000,
+      "option_label": "Cấu hình", "collections": ["work", "creative"], "is_new": false, "is_featured": true,
+      "warranty": "Bảo hành chính hãng 12 tháng tại trung tâm bảo hành ủy quyền Apple.",
+      "in_the_box": "MacBook Pro, sạc USB-C 70W, cáp USB-C sang MagSafe 3 (2 m), tài liệu hướng dẫn.",
+      "description": "MacBook Pro 14 inch với chip M4 dành cho lập trình, dựng phim và thiết kế. Màn hình Liquid Retina XDR, ba cổng Thunderbolt, HDMI và khe thẻ SDXC giúp bạn làm việc mà không cần bộ chuyển đổi.",
+      "highlights": ["Chip Apple M4, RAM khởi điểm 16GB", "Màn hình Liquid Retina XDR 14,2 inch, độ sáng đỉnh 1600 nit", "Ba cổng Thunderbolt 4, HDMI, khe thẻ SDXC", "Pin đến 24 giờ xem video", "Camera 12MP Center Stage"],
+      "specs": [
+        ["Chip xử lý", "Apple M4, CPU 10 nhân, GPU 10 nhân"],
+        ["Màn hình", "14,2 inch Liquid Retina XDR, ProMotion 120Hz"],
+        ["Bộ nhớ", "RAM 16GB / 24GB / 32GB, SSD 512GB đến 2TB"],
+        ["Camera", "12MP Center Stage"],
+        ["Cổng kết nối", "3 × Thunderbolt 4, HDMI, khe thẻ SDXC, MagSafe 3, giắc tai nghe"],
+        ["Bàn phím", "Magic Keyboard có Touch ID, đèn nền"],
+        ["Pin", "Đến 24 giờ xem video"],
+        ["Trọng lượng", "1,55 kg"]
+      ],
+      "colors": [
+        { "key": "BLK", "name": "Đen Không Gian", "hex": "#34353a" },
+        { "key": "SLV", "name": "Bạc", "hex": "#d9dadd" }
+      ],
+      "configurations": [
+        { "key": "16-512", "label": "16GB / 512GB", "price": 39990000 },
+        { "key": "24-1TB", "label": "24GB / 1TB", "price": 49990000 }
+      ]
+    },
+    {
+      "slug": "ipad-air-11-m3", "code": "IPA11", "name": "iPad Air 11 inch M3", "kind": "ipad",
+      "tagline": "Nhẹ nhàng. Mạnh mẽ. Đầy màu sắc.",
+      "category": "ipad", "brand": "apple", "price": 16990000,
+      "option_label": "Dung lượng", "collections": ["student", "creative"], "is_new": true, "is_featured": true,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "iPad Air, cáp sạc USB-C (1 m), tài liệu hướng dẫn. Củ sạc và bút bán riêng.",
+      "description": "iPad Air với chip M3 vừa nhẹ vừa mạnh, hỗ trợ Apple Pencil Pro và Magic Keyboard. Màn hình Liquid Retina 11 inch cho nét chữ sắc nét và màu sắc trung thực, phù hợp ghi chép, vẽ và giải trí.",
+      "highlights": ["Chip Apple M3 cho hiệu năng laptop", "Màn hình Liquid Retina 11 inch", "Hỗ trợ Apple Pencil Pro và Magic Keyboard", "Camera 12MP Center Stage", "Wi-Fi 6E, cổng USB-C"],
+      "specs": [
+        ["Chip xử lý", "Apple M3"],
+        ["Màn hình", "11 inch Liquid Retina, 2360 × 1640"],
+        ["Camera", "Sau 12MP, trước 12MP Center Stage"],
+        ["Bút cảm ứng", "Apple Pencil Pro, Apple Pencil (USB-C)"],
+        ["Kết nối", "Wi-Fi 6E, Bluetooth 5.3, USB-C"],
+        ["Bảo mật", "Touch ID"],
+        ["Trọng lượng", "Khoảng 460 g"]
+      ],
+      "colors": [
+        { "key": "BLU", "name": "Xanh", "hex": "#8196b6" },
+        { "key": "PUR", "name": "Tím", "hex": "#a99dcb" },
+        { "key": "STL", "name": "Ánh Sao", "hex": "#e9e2d3" },
+        { "key": "GRY", "name": "Xám Không Gian", "hex": "#6f7076" }
+      ],
+      "configurations": [
+        { "key": "128", "label": "128GB", "price": 16990000 },
+        { "key": "256", "label": "256GB", "price": 19990000 },
+        { "key": "512", "label": "512GB", "price": 25990000 }
+      ]
+    },
+    {
+      "slug": "ipad-a16", "code": "IPD11", "name": "iPad (A16)", "kind": "ipad",
+      "tagline": "Dành cho mọi lớp học.",
+      "category": "ipad", "brand": "apple", "price": 9990000,
+      "option_label": "Dung lượng", "collections": ["student"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "iPad, cáp sạc USB-C (1 m), tài liệu hướng dẫn. Củ sạc bán riêng.",
+      "description": "iPad với chip A16, màn hình Liquid Retina 11 inch và bốn màu tươi sáng. Mức giá dễ tiếp cận cho học sinh, sinh viên cần một chiếc máy tính bảng bền bỉ để ghi chú, đọc sách và học trực tuyến.",
+      "highlights": ["Chip A16 xử lý mượt các tác vụ hằng ngày", "Màn hình Liquid Retina 11 inch", "Camera trước 12MP Center Stage đặt ngang", "Hỗ trợ Apple Pencil (USB-C)"],
+      "specs": [
+        ["Chip xử lý", "A16"],
+        ["Màn hình", "11 inch Liquid Retina, 2360 × 1640"],
+        ["Camera", "Sau 12MP, trước 12MP Center Stage"],
+        ["Bút cảm ứng", "Apple Pencil (USB-C)"],
+        ["Kết nối", "Wi-Fi 6, Bluetooth 5.3, USB-C"],
+        ["Bảo mật", "Touch ID"],
+        ["Trọng lượng", "Khoảng 477 g"]
+      ],
+      "colors": [
+        { "key": "BLU", "name": "Xanh Lam", "hex": "#8fa5d3" },
+        { "key": "PNK", "name": "Hồng", "hex": "#f0c4d0" },
+        { "key": "YEL", "name": "Vàng", "hex": "#f1dc9c" },
+        { "key": "SLV", "name": "Bạc", "hex": "#d9dadd" }
+      ],
+      "configurations": [
+        { "key": "128", "label": "128GB", "price": 9990000 },
+        { "key": "256", "label": "256GB", "price": 12990000 }
+      ]
+    },
+    {
+      "slug": "apple-watch-series-10", "code": "AW10", "name": "Apple Watch Series 10", "kind": "watch",
+      "tagline": "Mỏng hơn. Rộng hơn. Sáng hơn.",
+      "category": "apple-watch", "brand": "apple", "price": 10990000,
+      "option_label": "Kích thước vỏ", "collections": ["work"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "Apple Watch, dây đeo, cáp sạc từ tính USB-C, tài liệu hướng dẫn.",
+      "description": "Apple Watch Series 10 có màn hình góc nhìn rộng lớn nhất từ trước đến nay, thân máy mỏng nhẹ và sạc nhanh. Theo dõi nhịp tim, giấc ngủ và các bài tập luyện ngay trên cổ tay.",
+      "highlights": ["Màn hình OLED góc nhìn rộng, luôn bật", "Thân máy mỏng nhẹ, sạc nhanh 80% trong 30 phút", "Theo dõi nhịp tim, ECG và giấc ngủ", "Chống nước đến 50 m"],
+      "specs": [
+        ["Kích thước vỏ", "42 mm hoặc 46 mm"],
+        ["Màn hình", "OLED góc nhìn rộng, luôn bật"],
+        ["Chip xử lý", "S10 SiP"],
+        ["Sức khỏe", "Nhịp tim, ECG, thông báo ngưng thở khi ngủ, nhiệt độ cổ tay"],
+        ["Chống nước", "50 m"],
+        ["Vỏ máy", "Nhôm"],
+        ["Kết nối", "GPS, Bluetooth 5.3, Wi-Fi"]
+      ],
+      "colors": [
+        { "key": "JET", "name": "Đen Bóng", "hex": "#2a2a2d" },
+        { "key": "ROS", "name": "Vàng Hồng", "hex": "#e4bfae" },
+        { "key": "SLV", "name": "Bạc", "hex": "#d9dadd" }
+      ],
+      "configurations": [
+        { "key": "42", "label": "42 mm", "price": 10990000 },
+        { "key": "46", "label": "46 mm", "price": 11990000 }
+      ]
+    },
+    {
+      "slug": "airpods-pro-3", "code": "APP3", "name": "AirPods Pro 3", "kind": "airpods-pro",
+      "tagline": "Chống ồn đỉnh cao. Nghe sống động.",
+      "category": "airpods", "brand": "apple", "price": 6490000,
+      "option_label": "Phiên bản", "collections": ["work", "student"], "is_new": true, "is_featured": true,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "Tai nghe, hộp sạc MagSafe (USB-C), nút tai silicone nhiều kích cỡ, tài liệu hướng dẫn.",
+      "description": "AirPods Pro 3 nâng khả năng chống ồn chủ động lên một tầm cao mới, đi cùng âm thanh không gian cá nhân hóa và nút tai ôm vừa vặn. Hộp sạc MagSafe nhỏ gọn, sạc qua cổng USB-C.",
+      "highlights": ["Chống ồn chủ động thế hệ mới với chip H2", "Âm thanh không gian cá nhân hóa", "Chống nước, bụi chuẩn IP57", "Hộp sạc MagSafe, cổng USB-C"],
+      "specs": [
+        ["Chip", "Apple H2"],
+        ["Chống ồn", "Chống ồn chủ động, chế độ xuyên âm thích ứng"],
+        ["Âm thanh", "Âm thanh không gian, theo dõi chuyển động đầu"],
+        ["Thời lượng pin", "Khoảng 8 giờ nghe khi bật chống ồn"],
+        ["Hộp sạc", "MagSafe, cổng USB-C"],
+        ["Chống nước, bụi", "IP57"],
+        ["Kết nối", "Bluetooth 5.3"]
+      ],
+      "colors": [{ "key": "WHT", "name": "Trắng", "hex": "#f4f4f1" }],
+      "configurations": [{ "key": "STD", "label": null, "price": 6490000 }]
+    },
+    {
+      "slug": "airpods-4", "code": "APD4", "name": "AirPods 4", "kind": "airpods-4",
+      "tagline": "Thiết kế mới. Thoải mái cả ngày.",
+      "category": "airpods", "brand": "apple", "price": 3490000,
+      "option_label": "Phiên bản", "collections": ["student"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "Tai nghe, hộp sạc USB-C, cáp USB-C, tài liệu hướng dẫn.",
+      "description": "AirPods 4 có thiết kế mới vừa tai hơn, âm thanh không gian cá nhân hóa và hộp sạc nhỏ gọn. Phiên bản chống ồn chủ động mang thêm chế độ xuyên âm thích ứng cho những chuyến đi và buổi học.",
+      "highlights": ["Thiết kế vừa tai thoải mái", "Chip H2 cho âm thanh rõ nét", "Phiên bản có chống ồn chủ động và xuyên âm thích ứng", "Hộp sạc USB-C"],
+      "specs": [
+        ["Chip", "Apple H2"],
+        ["Chống ồn", "Chống ồn chủ động (chỉ phiên bản chống ồn)"],
+        ["Âm thanh", "Âm thanh không gian cá nhân hóa"],
+        ["Thời lượng pin", "Khoảng 5 giờ nghe, đến 30 giờ cùng hộp sạc"],
+        ["Hộp sạc", "USB-C"],
+        ["Chống nước, bụi", "IP54"]
+      ],
+      "colors": [{ "key": "WHT", "name": "Trắng", "hex": "#f4f4f1" }],
+      "configurations": [
+        { "key": "STD", "label": "Tiêu chuẩn", "price": 3490000 },
+        { "key": "ANC", "label": "Chống ồn chủ động", "price": 4790000 }
+      ]
+    },
+    {
+      "slug": "airpods-max", "code": "APMX", "name": "AirPods Max", "kind": "airpods-max",
+      "tagline": "Âm thanh độ trung thực cao, nghe trọn từng chi tiết.",
+      "category": "airpods", "brand": "apple", "price": 13990000, "compare_at": 14990000,
+      "option_label": "Phiên bản", "collections": ["creative", "work"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "Tai nghe, Smart Case, cáp sạc USB-C, tài liệu hướng dẫn.",
+      "description": "AirPods Max kết hợp khung nhôm, đệm tai bằng lưới dệt và chống ồn chủ động đỉnh cao. Núm Digital Crown điều chỉnh âm lượng chính xác, pin đến 20 giờ cho cả ngày nghe nhạc.",
+      "highlights": ["Chống ồn chủ động và chế độ xuyên âm", "Âm thanh không gian với theo dõi chuyển động đầu", "Pin đến 20 giờ", "Khung nhôm, đệm tai lưới dệt, núm Digital Crown"],
+      "specs": [
+        ["Chip", "Apple H2 (mỗi bên tai)"],
+        ["Chống ồn", "Chống ồn chủ động, chế độ xuyên âm"],
+        ["Âm thanh", "Âm thanh không gian, driver động học của Apple"],
+        ["Thời lượng pin", "Đến 20 giờ"],
+        ["Cổng sạc", "USB-C"],
+        ["Chất liệu", "Khung nhôm, đệm tai lưới dệt"]
+      ],
+      "colors": [
+        { "key": "MID", "name": "Đen Nửa Đêm", "hex": "#2d2e33" },
+        { "key": "BLU", "name": "Xanh", "hex": "#9bb2cc" },
+        { "key": "PUR", "name": "Tím", "hex": "#b8a8d4" },
+        { "key": "STL", "name": "Ánh Sao", "hex": "#e9e2d3" }
+      ],
+      "configurations": [{ "key": "STD", "label": null, "price": 13990000, "compare_at": 14990000 }]
+    },
+    {
+      "slug": "magsafe-charger", "code": "MGSF", "name": "Sạc MagSafe (1 m)", "kind": "magsafe",
+      "tagline": "Sạc không dây, nam châm tự căn.",
+      "category": "phu-kien", "brand": "apple", "price": 1190000,
+      "option_label": "Phiên bản", "collections": ["student", "work"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "Sạc MagSafe với cáp USB-C dài 1 m.",
+      "description": "Sạc không dây MagSafe hít chắc vào mặt lưng iPhone, tự căn đúng vị trí để sạc nhanh và ổn định. Cáp USB-C dài 1 m gọn gàng trên bàn làm việc hoặc đầu giường.",
+      "highlights": ["Nam châm tự căn đúng vị trí sạc", "Sạc không dây Qi2 đến 25W khi dùng củ sạc phù hợp", "Cáp USB-C dài 1 m"],
+      "specs": [
+        ["Công suất", "Đến 25W (cần củ sạc 30W trở lên)"],
+        ["Chuẩn sạc", "MagSafe, Qi2"],
+        ["Chiều dài cáp", "1 m"],
+        ["Cổng kết nối", "USB-C"],
+        ["Tương thích", "iPhone 12 trở lên, vỏ ốp MagSafe, AirPods có hộp sạc không dây"]
+      ],
+      "colors": [{ "key": "WHT", "name": "Trắng", "hex": "#f4f4f1" }],
+      "configurations": [{ "key": "STD", "label": null, "price": 1190000 }]
+    },
+    {
+      "slug": "airtag", "code": "ATAG", "name": "AirTag", "kind": "airtag",
+      "tagline": "Tìm đồ thất lạc dễ dàng.",
+      "category": "phu-kien", "brand": "apple", "price": 790000,
+      "option_label": "Số lượng", "collections": ["student"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "AirTag kèm pin CR2032, tài liệu hướng dẫn.",
+      "description": "Gắn AirTag vào chìa khóa, ví hoặc balo rồi xem vị trí ngay trong ứng dụng Tìm. Mạng lưới Tìm hàng trăm triệu thiết bị Apple giúp bạn định vị đồ vật, còn Tìm chính xác dẫn đường đến tận nơi.",
+      "highlights": ["Tìm chính xác bằng Ultra Wideband", "Chống nước, bụi chuẩn IP67", "Pin CR2032 thay được, dùng khoảng 1 năm", "Loa tích hợp phát âm thanh khi cần tìm"],
+      "specs": [
+        ["Định vị", "Ứng dụng Tìm, Tìm chính xác (Ultra Wideband)"],
+        ["Chống nước, bụi", "IP67"],
+        ["Pin", "CR2032, thay được, dùng khoảng 1 năm"],
+        ["Kết nối", "Bluetooth, NFC"],
+        ["Tương thích", "iPhone, iPad dùng iOS/iPadOS tương ứng"]
+      ],
+      "colors": [{ "key": "WHT", "name": "Trắng", "hex": "#f4f4f1" }],
+      "configurations": [
+        { "key": "1", "label": "1 chiếc", "price": 790000 },
+        { "key": "4", "label": "Bộ 4 chiếc", "price": 2690000 }
+      ]
+    },
+    {
+      "slug": "apple-pencil-pro", "code": "APCP", "name": "Apple Pencil Pro", "kind": "pencil",
+      "tagline": "Viết, vẽ, bóp để điều khiển.",
+      "category": "phu-kien", "brand": "apple", "price": 3590000,
+      "option_label": "Phiên bản", "collections": ["student", "creative"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành chính hãng 12 tháng.",
+      "in_the_box": "Apple Pencil Pro, tài liệu hướng dẫn.",
+      "description": "Apple Pencil Pro bổ sung thao tác bóp, xoay nghiêng và phản hồi xúc giác, cho phép bạn điều khiển công cụ ngay trên ngòi bút. Gắn từ vào cạnh iPad để ghép đôi và sạc không dây.",
+      "highlights": ["Cảm biến bóp để mở bảng công cụ", "Xoay nghiêng thân bút, phản hồi xúc giác", "Hỗ trợ tìm bút qua ứng dụng Tìm", "Ghép đôi và sạc từ tính"],
+      "specs": [
+        ["Tính năng", "Bóp, xoay nghiêng, phản hồi xúc giác, độ nhạy lực"],
+        ["Sạc", "Từ tính, không dây qua cạnh iPad"],
+        ["Tương thích", "iPad Air (M2, M3), iPad Pro (M4)"],
+        ["Tìm bút", "Hỗ trợ ứng dụng Tìm"]
+      ],
+      "colors": [{ "key": "WHT", "name": "Trắng", "hex": "#f4f4f1" }],
+      "configurations": [{ "key": "STD", "label": null, "price": 3590000 }]
+    },
+    {
+      "slug": "usb-c-20w-adapter", "code": "CS20W", "name": "Củ sạc USB-C 20W", "kind": "adapter",
+      "tagline": "Sạc nhanh gọn nhẹ cho iPhone và iPad.",
+      "category": "phu-kien", "brand": "belkin", "price": 590000,
+      "option_label": "Phiên bản", "collections": ["student", "work"], "is_new": false, "is_featured": false,
+      "warranty": "Bảo hành 12 tháng.",
+      "in_the_box": "Củ sạc USB-C 20W.",
+      "description": "Củ sạc USB-C 20W nhỏ gọn, sạc nhanh cho iPhone và iPad. Thiết kế chân gập tiện mang theo, có chứng nhận an toàn điện.",
+      "highlights": ["Công suất 20W sạc nhanh iPhone", "Thiết kế nhỏ gọn, dễ mang theo", "Bảo vệ quá dòng, quá nhiệt"],
+      "specs": [
+        ["Công suất", "20W"],
+        ["Cổng ra", "1 × USB-C"],
+        ["Tương thích", "iPhone 8 trở lên, iPad"],
+        ["Bảo vệ", "Quá dòng, quá áp, quá nhiệt"]
+      ],
+      "colors": [{ "key": "WHT", "name": "Trắng", "hex": "#f4f4f1" }],
+      "configurations": [{ "key": "STD", "label": null, "price": 590000 }]
+    }
+  ]
+}

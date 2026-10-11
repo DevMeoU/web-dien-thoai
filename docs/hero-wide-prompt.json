@@ -1,0 +1,10 @@
+{
+  "generator": "Built-in image_gen.imagegen",
+  "asset": "frontend/public/images/home/hero-wide.png",
+  "dimensions": {
+    "width": 2172,
+    "height": 724
+  },
+  "input_image": "frontend/public/images/products/iphone-17-pro-max-org.png",
+  "prompt": "Use case: ads-marketing. Asset type: one premium ecommerce website hero background, a panoramic wide landscape image with aspect ratio 3:1, intended for a full-width 1920px banner. Input image is a product-reference photo only: preserve the two orange iPhone 17 Pro Max devices, front display and rear camera/finish recognizable from the reference. Create a NEW, much more refined advertising photograph, not a UI screenshot. Continuous seamless pale neutral gray (#f2f2f2) studio backdrop and tabletop across the entire image with subtle sweeping daylight and believable contact shadows. Arrange the two phones in the RIGHT HALF, as a poised sculptural front-and-back pair, gently angled in opposite directions in a refined three-quarter product view, one slightly behind the other. Front phone screen dark with delicate copper light arcs and a clean pill-shaped camera cutout. Beautiful brushed orange aluminum, authentic glass reflections, precise lens details, sharp machining. Entire devices fully visible with breathing room, pair occupies x=58%-88% and y=12%-88% of the canvas. LEFT 48% must stay very light, calm and mostly empty for black HTML headline and CTA overlay. No dividing seam, no separate rectangular panels, no frame, no typography or labels, no watermark, no extra products, no fake 3D illustration. Photorealistic high-end studio campaign, tasteful softbox rim lighting and subtle reflections. Wider environmental image rather than enlarged portrait photo; integrated background fills all edges. Render wide panorama 3:1."
+}

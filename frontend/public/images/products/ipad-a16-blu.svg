@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="iPad (A16) màu Xanh Lam">
+<defs><linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f4f4" stop-opacity="1"/><stop offset="1" stop-color="#eeeeee" stop-opacity="1"/></linearGradient><filter id="blur4" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="22"/></filter><linearGradient id="tw1" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#8599cc" stop-opacity="1"/><stop offset="0.5" stop-color="#5c6ea5" stop-opacity="1"/><stop offset="1" stop-color="#303955" stop-opacity="1"/></linearGradient><linearGradient id="tf2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b6c5e2" stop-opacity="1"/><stop offset="1" stop-color="#7a8cb3" stop-opacity="1"/></linearGradient></defs>
+<rect width="1200" height="1200" fill="url(#bg3)"/>
+
+<ellipse cx="606" cy="1010" rx="270" ry="24" fill="#111111" fill-opacity="0.18" filter="url(#blur4)"/>
+<g transform="translate(600 590) rotate(-4) scale(1)"><rect x="-290" y="-390" width="580" height="780" rx="52" fill="url(#tf2)"/>
+<rect x="-282" y="-382" width="564" height="764" rx="46" fill="#0b0b0d"/>
+<rect x="-262" y="-362" width="524" height="724" rx="30" fill="url(#tw1)"/>
+<circle cx="0" cy="-372" r="4" fill="#26262b"/>
+<text x="-236" y="-326" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff">9:41  Thứ Năm 9 thg 10</text>
+<rect x="-232" y="-290" width="210" height="210" rx="28" fill="#ffffff" fill-opacity="0.22"/><circle cx="-127" cy="-185" r="74" fill="#ffffff" fill-opacity="0.85"/><path d="M-127 -185 V-240 M-127 -185 L-90 -160" stroke="#2a2a2f" stroke-width="6" stroke-linecap="round"/>
+<rect x="-6" y="-290" width="238" height="210" rx="28" fill="#ffffff" fill-opacity="0.22"/><text x="112" y="-190" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="76" font-weight="300" fill="#ffffff" text-anchor="middle">9</text><text x="112" y="-130" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">THG 10</text>
+<rect x="-232" y="-56" width="464" height="190" rx="28" fill="#ffffff" fill-opacity="0.18"/><rect x="-204" y="-24" width="260" height="12" rx="6" fill="#ffffff" fill-opacity="0.8"/><rect x="-204" y="6" width="380" height="10" rx="5" fill="#ffffff" fill-opacity="0.5"/><rect x="-204" y="32" width="320" height="10" rx="5" fill="#ffffff" fill-opacity="0.5"/>
+<rect x="-132" y="304" width="264" height="56" rx="20" fill="#ffffff" fill-opacity="0.28"/><rect x="-96" y="316" width="32" height="32" rx="9" fill="#ff6a55" fill-opacity="0.92"/><rect x="-56" y="316" width="32" height="32" rx="9" fill="#ffb03a" fill-opacity="0.92"/><rect x="-16" y="316" width="32" height="32" rx="9" fill="#4cc36a" fill-opacity="0.92"/><rect x="24" y="316" width="32" height="32" rx="9" fill="#3b8cff" fill-opacity="0.92"/><rect x="64" y="316" width="32" height="32" rx="9" fill="#a56bff" fill-opacity="0.92"/></g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="AirTag, góc nhìn thứ hai">
+<defs><linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f4f4" stop-opacity="1"/><stop offset="1" stop-color="#eeeeee" stop-opacity="1"/></linearGradient><filter id="blur4" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="22"/></filter><radialGradient id="at1" cx="0.38" cy="0.32" r="0.75"><stop offset="0" stop-color="#ffffff" stop-opacity="1"/><stop offset="0.8" stop-color="#f2f2ee" stop-opacity="1"/><stop offset="1" stop-color="#d9d9d4" stop-opacity="1"/></radialGradient><radialGradient id="as2" cx="0.4" cy="0.35" r="0.8"><stop offset="0" stop-color="#f3f4f6" stop-opacity="1"/><stop offset="0.6" stop-color="#b9bcc2" stop-opacity="1"/><stop offset="1" stop-color="#8d9097" stop-opacity="1"/></radialGradient></defs>
+<rect width="1200" height="1200" fill="url(#bg3)"/>
+
+<ellipse cx="600" cy="1040" rx="460" ry="24" fill="#111111" fill-opacity="0.18" filter="url(#blur4)"/>
+<g transform="translate(600 600) scale(1.12) translate(-600 -600) rotate(5 600 600)"><g transform="translate(580 560) rotate(0) scale(1.4)"><circle cx="40" cy="44" r="186" fill="url(#as2)"/><circle cx="0" cy="0" r="186" fill="url(#at1)" stroke="#cfcfca" stroke-width="2"/><circle cx="0" cy="0" r="168" fill="none" stroke="#e1e1dc" stroke-width="2"/><circle cx="0" cy="0" r="30" fill="#f6f6f3" stroke="#d3d3ce" stroke-width="2"/><circle cx="0" cy="0" r="9" fill="#c9c9c4"/></g></g>
+</svg>
